@@ -1,0 +1,5 @@
+baseURL = "http://powercall.pt/"
+languageCode = "en-us"
+title = "Powercall"
+theme = "bigspring"
+
