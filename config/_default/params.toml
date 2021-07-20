@@ -10,6 +10,8 @@ image = "images/logo.png" # this image will be used as fallback if a page has no
 # contact form action
 contact_form_action = "#" # contact form works with https://formspree.io
 
+favicon = "favicon.ico"
+
 # Preloader
 [preloader]
 enable = false
