@@ -1,0 +1,8 @@
+########### footer content ##########
+footer_menu_left = "Company"
+footer_menu_middle = "Product"
+footer_menu_right = "Support"
+footer_content = "Improve your call center by calling your customers at the right time"
+
+# copyright
+copyright = "Powercall, Lda"
