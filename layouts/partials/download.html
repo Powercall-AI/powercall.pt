@@ -1,0 +1,52 @@
+<section class="section card bg-white pt-0 pb-0 mt-5 mx-5">
+    <form id="download" action="{{ .form_url }}" method="POST">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 px-4">
+                    <input type="text" required class="form-control mt-4" id="name" name="name" placeholder="{{ i18n `yourname` }}">
+                    <input type="email" required class="form-control mt-4" id="mail" name="mail" placeholder="{{ i18n `youremail` }}">
+                </div>
+                <div class="col-lg-6 px-4">
+                    <input type="text" required class="form-control mt-4" id="phone" name="phone" placeholder="{{ i18n `yourphone` }}">
+                    <input type="text" required class="form-control mt-4" id="company" name="company" placeholder="{{ i18n `yourcompany` }}">
+                </div>
+            </div>
+            <div class="row">
+                <div class="mx-auto">
+                    <button type="submit" value="send" class="btn btn-primary mt-4" >{{.submit}}</button>
+                    <p id="download-status"></p>
+                </div>
+            </div>
+        </div>
+    </form>
+</section>
+
+<script>
+    var form = document.getElementById("download");
+
+    async function handleSubmit(event) {
+        event.preventDefault();
+
+        var data = new FormData(event.target);
+
+        fetch(event.target.action, {
+            method: form.method,
+            body: data,
+            headers: {
+                'Accept': 'application/json'
+            }
+        }).then(response => {
+            var link = document.createElement('a');
+            link.href = {{ .file_url | safeURL }};
+            link.download = {{ .file_name | safeURL}};
+            link.dispatchEvent(new MouseEvent('click'));
+
+            form.reset();
+        }).catch(error => {
+            var status = document.getElementById("download-status");
+            status.innerHTML = "Oops! There was a problem submitting your form";
+        })
+    }
+
+    form.addEventListener("submit", handleSubmit)
+</script>
