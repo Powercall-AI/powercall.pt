@@ -3,7 +3,7 @@
 banner:
   image : "images/hero.png"
   title : "Improve your call center <br> by calling your customers at the right time"
-  content : "Take advantage of AI to personalize contact times for each customer.<br>Improve your get lower reschedule rates, improve your customer experience and sky rocket your sales!"
+  content : "Take advantage of AI to personalize contact times for each customer.<br>Improve your customer experience and sky rocket your sales!"
   button:
     enable : true
     label : "Contact Us"
@@ -22,7 +22,7 @@ feature:
     # feature item loop
     - name : "Improve Customer Experience"
       icon : "fas fa-medal"
-      content : "Anoyed customers don't listen. Who can blame them? Avoid calling at inoportune times and increase your customer satisfaction"
+      content : "Avoid calling at inoportune times and increase your customer satisfaction."
 
     # feature item loop
     - name : "Increase Sales"
@@ -42,7 +42,7 @@ feature:
     # feature item loop
     - name : "Cloud Support"
       icon : "fas fa-cloud"
-      content : "Works on cloud or on premises. Come talk with us for the supported call center integrations list."
+      content : "Works on cloud or on premises. Come talk with us and find out our supported call center integrations list."
 
 
 ######################### Service #####################
@@ -50,7 +50,7 @@ service:
   enable : true
   service_item:
     # service item loop
-    - title : "Power call delivers more sales"
+    - title : "Powercall delivers more sales"
       images:
       - "images/service-1.png"
       - "images/service-2.png"
@@ -62,35 +62,42 @@ service:
         link : "resources"
 
     # service item loop
-    - title : "It is a privately owned Information and cyber security company"
+    - title : "Quick integration"
       images:
       - "images/service-1.png"
-      content : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat. consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat."
+      content : "Powercall can easily be added to existing call center software. Our APIs are designed to seamless adapt to both new and legacy systems, maintaining compliance with existing rules, blocklists and priority settings."
+      button:
+        enable : true
+        label : "Check it out"
+        link : "resources"
+
+    # service item loop
+    - title : "Build better relationships with your customers"
+      images:
+      - "images/service-2.png"
+      content : "Powercall handles all data gathering and processing so you don't have to. Our algorithms and data sources enrich your data and provide seamless improvements across your operations, without your agents changing any process. They just get better results, and they notice them. Like magic."
       button:
         enable : true
         label : "Check it out"
         link : "#"
 
     # service item loop
-    - title : "It’s a team of experienced and skilled people with distributions"
-      images:
-      - "images/service-2.png"
-      content : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat. consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat."
-      button:
-        enable : true
-        label : "Check it out"
-        link : "#"
-        
-    # service item loop
-    - title : "A company standing different from others"
+    - title : "Compound results"
       images:
       - "images/service-3.png"
-      content : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat. consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat."
+      content : "It works on top of your existing optimizations, including predictive dialing modes, quarenteen periods and customer profiles. "
+
+    # service item loop
+    - title : "Track results"
+      images:
+      - "images/service-3.png"
+      content : "Continuously track your operations and improvements with live AB tests and dashboards."
+
       button:
         enable : true
-        label : "Check it out"
+        label : "Find out how"
         link : "#"
-        
+
 ################### Screenshot ########################
 screenshot:
   enable : true
