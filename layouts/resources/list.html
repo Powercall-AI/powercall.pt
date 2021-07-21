@@ -1,0 +1,19 @@
+{{ define "main" }}
+{{ partial "page-header.html" . }}
+
+{{ "<!-- resources -->" | safeHTML }}
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-4">{{ partial "author" .Params.author }}</div>
+      <div class="col-8" >
+        {{ .Content }}
+
+        {{ partial "download" .Params.download }}
+      </div>
+    </div>
+  </div>
+</section>
+{{ "<!-- /resources -->" | safeHTML }}
+
+{{ end }}
